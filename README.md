@@ -35,11 +35,13 @@ In update and destroy view we have to use request.put and requests.delete method
 
 For more information regarding all the methods I have used, you have to look in the views.py file in the products app. And in py_cleint I have commented out all the ways I am using to retrieve the data, and performin all functionalities that I have presented so far,
 
-  App Name: - Auths
+    App Name: - Auths
 
 This app contains the authentication nechanism that I have been using like tokenauthentication, Staff mixin that I have created, authentication based of your group that we can configure in the admin.py file.
 
 I am using various ways to authenticate the user basic one is to use the tokenauthentication as of now, so as to get the users authenticated so as to get access to the api calls that are made to the server, but the authentication that I am using is not much validated as I was not able to set the permissions that are needed for differnt users, through code, but Through the django backend portal I was able to set it up.
+
+    App Name: - Search
 
 
 
