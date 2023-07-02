@@ -4,11 +4,11 @@ It shows the use of REST API's with Django &amp; The Django Rest Framework
 
 I have defined various apps within the projects to clarify what all the methods I am using, different apps contribute to different tasks, I have written many comments in the code explaining all the important parts of the code, Here on github I will just be giving a brief on what different apps contains and what all methods and ways are used in those apps to have a general understanding as to what is written in the code.
 
-  App Name: - api
+    App Name: - api
 
 This app basically contains the information of how can we access the api endpoints using the requests library and how we can pass in the parameters and query arguments and how we can echo this data back and access it according to our requirements. We convert the json data sent to us in the form of a dictionery and accessing the data we get the query paramters that we have send in the data. I have commented all the necessary information and in the py_client folder I have all the information there to access the basic api view.
 
-  App Name: - products
+    App Name: - products
 
 I have defined a single model with three components as follwos: - Price,Content and title and with 2 functions which are sale prices and discount, these don't have any significant means they are just for me to use them and understand the context, This app in intermingled with the auth's app and some things that will be mentioned here will also be mentioned there as well.
 
@@ -42,6 +42,8 @@ This app contains the authentication nechanism that I have been using like token
 I am using various ways to authenticate the user basic one is to use the tokenauthentication as of now, so as to get the users authenticated so as to get access to the api calls that are made to the server, but the authentication that I am using is not much validated as I was not able to set the permissions that are needed for differnt users, through code, but Through the django backend portal I was able to set it up.
 
     App Name: - Search
+
+We have implemented search functionalities using the models.Manager and Models.Queryset where we are just returning the queryset whcih matches our query given to us through the URL. we have defined the way to filter the results based of the given queryset that can be viewed at the models and the implementation of search can be viewed at the views.py in search. And we have also made use of the Algolia Search Engine through which we are performing teh searches using an API call, this can be viewd at index.py[products] and client.p[search] and the fucntions calls are made in search views.py.
 
 
 
